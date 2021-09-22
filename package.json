@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
+    "prepare": "husky install",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --format table",
-    "format": "prettier --write ./App.tsx src"
+    "format": "prettier --write ./App.tsx src",
+    "type-check": "tsc --pretty"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.0.5",
@@ -34,6 +36,7 @@
     "@types/react-test-renderer": "^17.0.1",
     "babel-jest": "^26.6.3",
     "eslint": "^7.14.0",
+    "husky": "^7.0.2",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.66.0",
     "react-native-codegen": "^0.0.7",
