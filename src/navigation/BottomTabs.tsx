@@ -6,10 +6,13 @@ const Tab = createBottomTabNavigator()
 
 const BottomTabs = (): JSX.Element => {
   return (
-    <Tab.Navigator initialRouteName="Home" screenOptions={{
-      headerShown: false
-    }}>
-      <Tab.Screen name="Home" component={Home}  />
+    <Tab.Navigator
+      initialRouteName="Home"
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <Tab.Screen name="Home" component={Home} />
     </Tab.Navigator>
   )
 }

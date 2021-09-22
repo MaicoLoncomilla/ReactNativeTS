@@ -9,10 +9,7 @@ const Drawer = createDrawerNavigator()
 
 const Navigation = (): JSX.Element => {
   return (
-    <Drawer.Navigator
-      initialRouteName="Home"
-      drawerContent={DrawerContent}
-    >
+    <Drawer.Navigator initialRouteName="Home" drawerContent={DrawerContent}>
       <Stack.Screen name="TabHome" component={BottomTabs} />
     </Drawer.Navigator>
   )
